@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    color:white; /* TEXT COLOR FOR VISIBILITY PURPOSES */
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -22,8 +22,71 @@ body {
 
 .topButtons a {
     padding-right: 40px; /* SPREADS THE BUTTONS APART */
+    font-weight: 600; /* SEMI-BOLD */
+    font-size: 12;
+    color:white;
 }
 
-.secondSection {
-    padding-left: 10%;
+.topButtons a:hover {
+    background: -webkit-linear-gradient(#F12DDD, #227AFF);
+    -webkit-background-clip: text; /* CLIPS THE BACKGROUND COLOR TO THE SHAPE OF THE TEXT */
+    -webkit-text-fill-color: transparent; /* THIS HAS TO BE HERE FOR SOME REASON */
+    -webkit-transition-duration: 1s;
+}
+
+
+/* SECOND SECTION */
+#secondSection {
+    display: flex; /* CHANGES CONTAINER TO A SIDE BY SIDE FLEX */
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+.iconsFrame {
+    display:flex;
+}
+
+.name {
+    background: -webkit-linear-gradient(#F12DDD, #227AFF);
+    -webkit-background-clip: text; /* CLIPS THE BACKGROUND COLOR TO THE SHAPE OF THE TEXT */
+    -webkit-text-fill-color: transparent; /* THIS HAS TO BE HERE FOR SOME REASON */
+    font-size: 90px;
+}
+
+
+/* THIRD SECTION */
+
+.thirdSection {
+    margin-left:15%;
+    margin-top: 5px;
+}
+
+.thirdSection h2 {
+    font-size: 20px;
+    color:white;
+}
+
+.thirdSection h3 {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #A5A5A5;
+    margin-top: 5px;
+}
+
+/* PARAGRAPHS */
+
+.paragraphs {
+    margin-left: 15%;
+    padding-top: 60px;
+}
+
+body {
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+h1 {
+    color:white;
 }
