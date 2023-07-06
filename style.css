@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
@@ -17,13 +16,13 @@ body {
 .topButtons {
    text-align: right;
    padding-right: 10%; /* TAKES THE BUTTONS OFF THE RIGHT SIDE OF THE SCREEN */
-   padding-top: 20px; /* TAKES THE BUTTONS OFF THE TOP OF THE SCREEN */
+   padding-top: 2vh; /* TAKES THE BUTTONS OFF THE TOP OF THE SCREEN */
 }
 
 .topButtons a {
     padding-right: 40px; /* SPREADS THE BUTTONS APART */
     font-weight: 600; /* SEMI-BOLD */
-    font-size: 12;
+    font-size: 1vw;
     color:white;
 }
 
@@ -40,53 +39,140 @@ body {
     display: flex; /* CHANGES CONTAINER TO A SIDE BY SIDE FLEX */
     gap: 20px;
     margin-top: 40px;
-    margin-left: 15%;
+    margin-left: 10vw;
 }
 
 .iconsFrame {
-    display:flex;
+   background-color: transparent;
+   display:grid;
+}
+
+.iconButton {
+    padding-left: 4px;
+    vertical-align: bottom;
+}
+
+.iconImage {
+    width: 1vw;
+    vertical-align: bottom;
 }
 
 .name {
     background: -webkit-linear-gradient(#F12DDD, #227AFF);
     -webkit-background-clip: text; /* CLIPS THE BACKGROUND COLOR TO THE SHAPE OF THE TEXT */
     -webkit-text-fill-color: transparent; /* THIS HAS TO BE HERE FOR SOME REASON */
-    font-size: 90px;
+    font-size: 4vw;
 }
 
 
 /* THIRD SECTION */
 
 .thirdSection {
-    margin-left:15%;
+    margin-left:10vw;
     margin-top: 5px;
 }
 
 .thirdSection h2 {
-    font-size: 20px;
+    font-size: 1vw;
     color:white;
 }
 
 .thirdSection h3 {
-    font-size: 16px;
+    font-size: .8vw;
     font-weight: lighter;
     color: #A5A5A5;
     margin-top: 5px;
 }
 
+
 /* PARAGRAPHS */
 
 .paragraphs {
-    margin-left: 15%;
-    padding-top: 60px;
+    margin-left: 10vw;
+    padding-top: 30px;
+    display: grid;
+    column-count: 2;
 }
 
-body {
+.leftColumn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.rightColumn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+h4 { /* MAIN TEXT IN PARAGRAPHS */
     color: #A5A5A5;
-    font-size: 16px;
+    font-size: .8vw;
     font-weight: lighter;
+}
+
+.bulletPoints {
+    font-size: .8vw;
+    color:#A5A5A5;
+    font-weight: lighter;
+    margin-left: 1vh;
+}
+
+/* EDUCATION INFORMATION */
+
+.schoolFrames {
+    display:grid;
+    column-count: 2;
+}
+
+.leftSchoolColumn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 2vh;
+}
+
+.rightSchoolColumn {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.date { /* DURATION OF EDUCATION */
+    font-size: .5vw;
+}
+
+.school { /* NAME OF EDUCATION */
+    font-size: .8vw;
+    color:white;
+}
+
+.capCourse {
+    margin-left: 1vh;
 }
 
 h1 {
     color:white;
+    font-size: 1vw;
+}
+
+.bodyHeader {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* SKILLS & CERTS */
+
+.skillsCerts {
+    display:grid;
+    column-count: 2;
+}
+
+/* DISCLAIMER */
+
+.disclaimer {
+    text-align: center;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 1vh;
+    left:40%;
+    right: 40%;
 }
