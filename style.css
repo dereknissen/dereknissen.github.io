@@ -1,0 +1,29 @@
+/* DEFAULTS */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color:white; /* TEXT COLOR FOR VISIBILITY PURPOSES */
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(black, #212121);
+    background-repeat: no-repeat;
+}
+
+.topButtons {
+   text-align: right;
+   padding-right: 10%; /* TAKES THE BUTTONS OFF THE RIGHT SIDE OF THE SCREEN */
+   padding-top: 20px; /* TAKES THE BUTTONS OFF THE TOP OF THE SCREEN */
+}
+
+.topButtons a {
+    padding-right: 40px; /* SPREADS THE BUTTONS APART */
+}
+
+.secondSection {
+    padding-left: 10%;
+}
