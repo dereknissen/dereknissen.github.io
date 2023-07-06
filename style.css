@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 150vh;
     background-image: linear-gradient(black, #212121);
     background-repeat: no-repeat;
 }
@@ -104,6 +104,7 @@ body {
 
 .paragraphs {
     margin-left: 10vw;
+    margin-right:10vw;
     padding-top: 30px;
     display: grid;
     column-count: 2;
@@ -179,6 +180,39 @@ h1 {
 .skillsCerts {
     display:grid;
     column-count: 2;
+}
+
+/* PROJECT SECTION */
+
+.projectSection {
+    margin-top: 40px;
+    margin-left: 10vw;
+}
+
+.project {
+    margin-top:20px;
+    display:grid;
+    column-count:2;
+}
+
+.projectDesc {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.projectPicture {
+    width: 20vw;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.projectButton {
+    margin-top: 10px;
+    text-decoration: none;
+    grid-column-start: 1;
+    color: #A5A5A5;
+    font-size: .8vw;
+    font-weight: lighter;
 }
 
 /* DISCLAIMER */
