@@ -18,7 +18,7 @@
     <link rel = "stylesheet" href = "style.css">
     <body>
         <!-- TOP BUTTONS -->
-        <div class = "topButtons">
+        <div data-cursor-img="images/spotlight.png"class = "topButtons">
             <!-- <a href = "roblox.com">Paper resume</a href> NEED TO ADD PAPER RESUME EVENTUALLY --> 
             <a href = "mailto: dereknissen23@gmail.com">Contact</a href>
         </div>
@@ -120,7 +120,18 @@
         </div>
 
         <!-- DISCLAIMER -->
-        <h4 class = "disclaimer">Designed with Figma with the Inter typeface<br>Produced with HTML, CSS, & JavaScript by myself</h4>
+        <h4 class = "disclaimer">Designed with Figma with the Inter typeface<br>Produced from scratch with HTML, CSS, & JavaScript by yours truly</h4>
+        <!-- CURSOR -->
+        <img class="cursor" src = "images/spotlight.png"></div>
     </body>
-    
+    <script>
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function(e){
+            var xPosition = e.clientX - 200 /* CENTERING THE IMAGE */
+            var yPosition = e.clientY - 200 /* CENTERING THE IMAGE */
+            cursor.style.cssText = "left: " + xPosition + "px; top: " + yPosition + "px;";
+            /* THIS CHANGES THE TEXT INSIDE OF THE CSS DOCUMENT TO MOVE THE CURSOR */
+        });
+
+    </script>
 </html>
