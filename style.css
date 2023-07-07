@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 150vh;
+    height: 200vh;
     background-image: linear-gradient(black, #212121);
     background-repeat: no-repeat;
 }
@@ -195,15 +195,8 @@ h1 {
     column-count:2;
 }
 
-.projectDesc {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
 .projectPicture {
     width: 20vw;
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 
 .projectButton {
@@ -220,8 +213,8 @@ h1 {
 
 .disclaimer {
     text-align: center;
+    padding-top:50px;
     vertical-align: bottom;
-    position: absolute;
     bottom: 0px;
     left:30%;
     right: 30%;
