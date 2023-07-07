@@ -209,16 +209,34 @@ h1 {
 }
 
 
-/* DISCLAIMER */
+/* FOOTER */
 
 .disclaimer {
     text-align: center;
-    padding-top:50px;
-    vertical-align: bottom;
+    padding-top:5px;
     bottom: 0px;
     left:30%;
     right: 30%;
 }
+
+.linkGrid {
+    display:inline;
+    left:40px;
+    right:40px;
+}
+
+.footer {
+    text-align: center;
+    left: 20%;
+    right: 20%;
+}
+
+.iconButtonFooter {
+    padding-left: 4px;
+    vertical-align: bottom;
+}
+
+
 
 /* CURSOR */
 
