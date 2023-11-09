@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    color:white;
+    font-family:IBM Plex Sans, Arial;
+
+
+    --background-color: #131313;
+    --grey-color: #373737;
+    --link-color: #469BDD;
+    --text-gradient: -webkit-linear-gradient(#469BDD 40%, #FFFFFF);
+}
+
+body {
+    background-color: var(--background-color);
+    height:100vh;
+}
+
+h1 {
+    padding-top:20vh;
+    font-weight:400;
+    text-align: center;
+
+}
